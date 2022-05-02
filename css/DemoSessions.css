@@ -1,0 +1,85 @@
+.demo-container {
+    margin: 5% 0;
+}
+
+.demo-form-heading {
+    text-align: center;
+}
+
+.demo-form-heading h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.demo-form-heading p {
+    padding: 0 3%;
+    margin: 2% 0;
+    font-size: larger;
+}
+
+.demo-form {
+    display: flex;
+    justify-content: center;
+}
+
+.demo-form form {
+    width: 30%;
+    padding: 2% 5%;
+    border-radius: 1em;
+    background-color: rgba(19, 119, 219, 0.5);
+}
+
+.demo-form .input-container {
+    margin-top: 20px;
+}
+
+.demo-form .input-container p {
+    font-weight: bold;
+}
+
+.demo-form .input-container input {
+    width: auto;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+
+.demo-form .input-container:nth-child(3) {
+    text-align: center;
+}
+
+.demo-form .input-container button {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    text-align: center;
+    border-radius: 0.7em;
+    transition: ease all 0.5s;
+    background-color: black;
+}
+
+.demo-form .input-container button:hover {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .demo-form form {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .demo-form form {
+        margin: 20px 0;
+        width: 70%;
+    }
+}

@@ -1,0 +1,167 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-container {
+    color: black;
+    padding: 20px 40px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.nav-sub-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right {
+    display: flex;
+    margin: auto 25px;
+    align-items: baseline;
+}
+
+.logo p {
+    font-size: 1.5em;
+    color: rgba(29, 119, 219, 1);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.menu-btn-container {
+    display: none;
+}
+
+.menu-btn-wrapper {
+    margin-top: 7px;
+    display: flex;
+    align-items: baseline;
+}
+
+.menu-btn {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+}
+
+.user-options ul {
+    margin: auto;
+    align-items: center;
+}
+
+.user-options li {
+    display: inline;
+    cursor: pointer;
+    margin: 0px 2.5vw;
+    vertical-align: baseline;
+}
+
+.user-options ul .active {
+    padding-bottom: 5px;
+    font-weight: 700;
+    border-bottom: black 2px solid;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+}
+
+.account button {
+    border: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.account .loginBtn {
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.account .signBtn {
+    color: white;
+    padding: 8px 13px;
+    border-radius: 10px;
+    background-color: rgba(29, 119, 219, 1);
+}
+
+.search-container {
+    width: 80%;
+    width: 50vw;
+    margin-bottom: 15px;
+}
+
+.search-container input {
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: large;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #3686ff79;
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-container {
+        padding: 20px;
+    }
+    .nav-sub-wrapper {
+        justify-content: space-between;
+    }
+    .menu-btn-container {
+        display: inline;
+    }
+    .nav-right .account {
+        display: none;
+    }
+    .user-options li {
+        margin: 0px 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .nav-container {
+        padding: 15px;
+    }
+    .nav-sub-wrapper {
+        justify-content: space-between;
+    }
+    .logo {
+        width: 100%;
+        padding-left: 35%;
+    }
+    .search-container,
+    .loginBtn {
+        display: none;
+    }
+    .nav-right .account {
+        display: flex;
+    }
+    .signBtn {
+        display: block;
+    }
+    .menu-btn-container {
+        display: inline;
+    }
+    .user-options {
+        display: flex;
+        display: none;
+        align-items: center;
+    }
+    .user-options ul {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .user-options li {
+        display: block;
+        cursor: pointer;
+        margin: 30px auto;
+    }
+}
