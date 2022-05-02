@@ -5,10 +5,43 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
+/* chatbot icon styling */
+
+.chatbot-icon-container {
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+}
+
+.chatbot-wrapper {
+    padding: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: rgba(29, 112, 219, 0.5) 0 0 15px 10px;
+}
+
+.chatbot-wrapper:hover {
+    color: white;
+    background-color: black;
+}
+
+.chatbot-icon i {
+    font-size: 2em;
+}
+
+
+/* nav bar sttyling */
+
 .nav-container {
+    width: 100%;
     color: black;
+    position: fixed;
     padding: 20px 40px;
     align-items: center;
+    box-sizing: border-box;
     background-color: rgba(255, 255, 255, 1);
 }
 
