@@ -1,3 +1,35 @@
+/* discount -ribbon styling css */
+
+.discount-ribbon-container {
+    padding: 9px 0;
+    overflow: hidden;
+    background-color: rgba(29, 119, 219, 0.5);
+}
+
+.dsc-rbn-wrapper {
+    height: 1.1em;
+    overflow: hidden;
+}
+
+.discount-ribbon-container .dsc-msg {
+    margin: 0 70px;
+    display: inline;
+    font-size: large;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.discount-ribbon-container .dsc-msg:first-child {
+    margin-left: 0;
+}
+
+.discount-ribbon-container .dsc-msg:last-child {
+    margin-right: 0;
+}
+
+
+/* demo form styling */
+
 .demo-container {
     margin: 5% 0;
 }
