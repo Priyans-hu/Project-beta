@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/DemoSessions.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="nav-wrapper">
+            <div class="nav-sub-wrapper">
+                <div class="menu-btn-container">
+                    <div class="menu-btn-wrapper">
+                        <i class="fa-solid fa-bars menu-btn"></i>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="data:image/png;base64,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"
+                        alt="" width="100px">
+                    <!-- <p>LiveProject</p> -->
+                </div>
+                <div class="nav-right">
+                    <div class="search-container">
+                        <input type="text" name="" id="" placeholder="Enter Your Search Query">
+                    </div>
+                    <div class="account">
+                        <button class="loginBtn">Login</button>
+                        <button class="signBtn">SignUp</button>
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-top: 10px;">
+                <div class="user-options">
+                    <ul type="none">
+                        <li onclick="menuClick(this)" class="centre-user-options active">Home</li>
+                        <li onclick="menuClick(this)" class="centre-user-options">Courses</li>
+                        <li onclick="menuClick(this)" class="centre-user-options">Projects</li>
+                        <li onclick="menuClick(this)" class="centre-user-options">workshops</li>
+                        <li onclick="menuClick(this)" class="centre-user-options">Contact us</li>
+                        <li onclick="menuClick(this)" class="centre-user-options">About us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="landing-page-container" style="height: 100vh; background-color: gray; padding: 2%; text-align: center; font-size: xx-large; align-items: center; display: flex; justify-content: center;">
+        <div class="landing-page-wrapper">
+            <h1>Coming Soon!!</h1>
+        </div>
+    </div>
+
+    <div class="demo-container">
+        <div class="demo-wrapper">
+            <div class="demo-form-heading">
+                <h1>Free Demo Sessions</h1>
+                <p>Enter your phone number and book a FREE session on your favourite courses now!</p>
+            </div>
+            <div class="demo-form">
+                <form action="">
+                    <div class="input-container">
+                        <p>Enter your E-mail Address</p>
+                        <input type="email" name="" id="" placeholder="Email address">
+                    </div>
+                    <div class="input-container">
+                        <p>Enter your Mobile Number</p>
+                        <input type="number" name="" id="" placeholder="Mobile Number">
+                    </div>
+                    <div class="input-container">
+                        <button type="submit">Request a Free Demo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/activeTab.js"></script>
+
+</html>
