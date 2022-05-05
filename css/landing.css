@@ -81,3 +81,43 @@
     width: 100%;
     border-radius: 0.5em;
 }
+
+@media only screen and (max-width: 550px) {
+    .landing-page-container {
+        padding: 100px 5% 2% 5%;
+        box-sizing: border-box;
+    }
+    .landing-page-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .landing-left-container,
+    .landing-right-container {
+        width: 100%;
+    }
+    .landing-left-container h1 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .landing-left-container p {
+        text-align: center;
+        font-size: 0.5em;
+    }
+    .plus-point-wrapper {
+        padding: 20px 10px;
+        font-size: 0.7em;
+        border-radius: 0.5em;
+    }
+    .landing-demoBtn button {
+        font-size: 0.7em;
+    }
+    .landing-right-container {
+        width: 80%;
+        margin: 10% auto;
+        display: flex;
+        border-radius: 0.5em;
+        align-items: center;
+        justify-content: center;
+    }
+}
